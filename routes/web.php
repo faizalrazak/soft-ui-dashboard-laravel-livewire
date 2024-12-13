@@ -16,7 +16,9 @@ use App\Http\Livewire\Rtl;
 
 use App\Http\Livewire\LaravelExamples\UserProfile;
 use App\Http\Livewire\LaravelExamples\UserManagement;
-
+use App\Http\Livewire\Program\Index as ProgramIndex;
+use App\Http\Livewire\Program\Create as ProgramCreate;
+use App\Http\Livewire\Program\Edit as ProgramEdit;
 use Illuminate\Http\Request;
 
 /*
@@ -36,6 +38,13 @@ Route::get('/', function() {
 
 Route::get('/sign-up', SignUp::class)->name('sign-up');
 Route::get('/login', Login::class)->name('login');
+
+Route::prefix('program')->name('program.')->group(function () {
+    Route::get('/', ProgramIndex::class)->name('index');
+    Route::get('/create', ProgramCreate::class)->name('create');
+    Route::get('/edit', ProgramEdit::class)->name('edit');
+});
+
 
 Route::get('/login/forgot-password', ForgotPassword::class)->name('forgot-password');
 

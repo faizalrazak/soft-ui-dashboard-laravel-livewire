@@ -3729,8 +3729,8 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  color: #f53939;
-  border-color: #f53939;
+  color: #3D358B;
+  border-color: #3D358B;
 }
 .btn-outline-primary:hover {
   color: #000;
@@ -9462,7 +9462,7 @@ textarea.form-control-lg {
 }
 
 .bg-primary {
-  background-color: #f53939 !important;
+  background-color: #3D358B !important;
 }
 
 .bg-secondary {
@@ -19108,7 +19108,7 @@ textarea.form-control-lg {
 }
 
 .badge.bg-primary {
-  background: #f53939;
+  background: #3D358B;
 }
 
 .badge.bg-secondary {
@@ -21048,7 +21048,7 @@ hr.horizontal.gray-light {
   padding-left: 1rem;
   padding-right: 1rem;
   font-weight: 500;
-  color: #67748e;
+  color: #fff;
 }
 .navbar-vertical .navbar-nav .nav-link > i {
   min-width: 1.8rem;
